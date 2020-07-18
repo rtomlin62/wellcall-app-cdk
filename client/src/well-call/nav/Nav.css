@@ -1,0 +1,15 @@
+@import '~antd/dist/antd.css';
+
+.ant-menu {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    color: white;
+}
+
+.ant-menu-horizontal > .ant-menu-item a {
+    color: white;
+}
