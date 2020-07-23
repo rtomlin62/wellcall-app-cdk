@@ -1,14 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
 import { Menu } from 'antd';
 import { HomeOutlined, MailOutlined, ReadOutlined } from '@ant-design/icons';
 import './Nav.css';
-import About from '../about/About';
-import Contact from '../contact/Contact';
-import Home from '../home/Home';
+import logo from './WELLCALL_LOGO.png'
 
 const { SubMenu } = Menu;
 
@@ -23,40 +17,24 @@ const handleClick = (e: Event) => {
 
     return (
         <div className={'nav'}>
-
-            <Router>
-                <Menu
-                    onClick={() => handleClick}
-                    mode={'horizontal'}>
-                    <Menu.Item 
-                        key={'Home'}
-                        icon={<HomeOutlined />}>
-                        <a href={'/'}>Home</a>
-                    </Menu.Item>
-                    <Menu.Item 
-                        key={'about'}
-                        icon={<ReadOutlined />}>
-                        <a href={'/about'}>About</a>
-                    </Menu.Item>
-                    <Menu.Item 
-                        key={'Contact'}
-                        icon={<MailOutlined />}>
-                        <a href={'/contact'}>Contact</a>
-                    </Menu.Item>
-                </Menu>
-
-                <Switch>
-                <Route path="/about">
-                    <About />
-                </Route>
-                <Route path="/contact">
-                    <Contact />
-                </Route>
-                <Route path="/">
-                    <Home />
-                </Route>
-                </Switch>
-            </Router>
+            <img src={logo} style={{width:'90px', height:'70px', padding:'2px'}}/>
+            <Menu
+                className={"nav-bar"}
+                onClick={() => handleClick}
+                mode={'horizontal'}>
+                <Menu.Item 
+                    key={'Home'}>
+                    <a href={'/'}>Home</a>
+                </Menu.Item>
+                <Menu.Item 
+                    key={'about'}>
+                    <a href={'/about'}>About</a>
+                </Menu.Item>
+                <Menu.Item 
+                    key={'Contact'}>
+                    <a href={'/contact'}>Contact</a>
+                </Menu.Item>
+            </Menu>
         </div>
     )
 }

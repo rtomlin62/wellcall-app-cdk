@@ -1,0 +1,35 @@
+
+.header {
+    background-color: #1c2c5c;
+    color: #fff;
+    display: flex;
+    min-width: 100vw;
+    min-height: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin: 0px !important;
+}
+
+.gutter-row {
+    padding: 2px !important;
+    white-space: nowrap;
+}
+
+.link {
+    color: #7cc544;
+}
+
+.icon {
+    color: #fff;
+    margin: 0px 4px 0px 4px;
+}
+
+.text {
+    height: fit-content;
+}
+
+.right-side {
+    text-align-last: center;
+}
