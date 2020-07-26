@@ -1,15 +1,11 @@
 import React from 'react';
-import { Menu } from 'antd';
 import './Header.css';
-import { Row, Col, Divider } from 'antd';
+import { Row, Col } from 'antd';
 
-import { PhoneFilled, MailFilled, ReadOutlined } from '@ant-design/icons';
+import { PhoneFilled, MailFilled } from '@ant-design/icons';
 
 export default function  Header() {
 
-const handleClick = (e: Event) => {
-    console.log('Clicked')
-}
     return (
         <Row className={'header'} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
             <Col className="gutter-row" xs={24} sm={24} md={24} lg={6} xl={6} xxl={6}>

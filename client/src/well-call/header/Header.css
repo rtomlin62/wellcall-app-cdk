@@ -15,6 +15,7 @@
 .gutter-row {
     padding: 2px !important;
     white-space: nowrap;
+    display: inline;
 }
 
 .link {

@@ -1,10 +1,7 @@
 import React from 'react';
 import { Menu } from 'antd';
-import { HomeOutlined, MailOutlined, ReadOutlined } from '@ant-design/icons';
 import './Nav.css';
 import logo from './WELLCALL_LOGO.png'
-
-const { SubMenu } = Menu;
 
 interface NavProps {
 }
@@ -17,7 +14,7 @@ const handleClick = (e: Event) => {
 
     return (
         <div className={'nav'}>
-            <img src={logo} style={{width:'90px', height:'70px', padding:'2px'}}/>
+            <img src={logo} style={{width:'90px', height:'70px', padding:'2px'}} alt={'logo'}/>
             <Menu
                 className={"nav-bar"}
                 onClick={() => handleClick}

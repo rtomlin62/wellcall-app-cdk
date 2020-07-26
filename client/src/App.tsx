@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Nav from './well-call/nav/Nav';
 import Header from './well-call/header/Header';
